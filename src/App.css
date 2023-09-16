@@ -1,0 +1,115 @@
+.App {
+  display: flex;
+  align-items: stretch;
+}
+
+.sidebar {
+  width: 150px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  float: left;
+}
+
+.info-section {
+  margin-left: 180px;
+  padding: 20px;
+}
+
+.sidebar-item {
+  cursor: pointer;
+  padding: 16px;
+}
+
+.sidebar-item.highlighted {
+  background-color: #444;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.date-info.past {
+  color: gray;
+}
+
+.timeslots {
+  margin-top: 10px;
+  padding: 12px;
+}
+
+.firstdiv {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls {
+  background: rgb(235, 231, 231);
+  padding: 20px;
+}
+
+.controls p {
+  font-size: 2rem;
+  /* padding: 20px; */
+}
+
+.controls select {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+}
+
+.clickable {
+  color: blue;
+  cursor: pointer;
+}
+
+/* Responsive styles:*/
+
+@media (max-width: 768px) {
+  .firstdiv {
+    flex-direction: column;
+    text-align: center;
+  }
+  .controls {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .controls select {
+    width: 100%;
+  }
+}
+
+@media (min-width: 660px) {
+  .day-container {
+    overflow-x: scroll;
+  }
+
+  ul.time-slots {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+  }
+
+  ul.time-slots li {
+    margin: 0;
+  }
+
+  ul.time-slots label {
+    display: flex;
+    align-items: center;
+  }
+
+  .responsive-div {
+    width: 100%;
+    overflow: hidden;
+  }
+}
